@@ -31,6 +31,7 @@
     <None Remove="changes.txt" />
     <None Remove="license.txt" />
   </ItemGroup>
+
   <ItemGroup>
     <Content Include="3rd party.txt">
         <Pack>true</Pack>
@@ -54,11 +55,8 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-        <!-- <PackageReference Include="protobuf-net" Version="3.2.46" /> -->
-
-        <ProjectReference Include="../../../protobuf-net/src/protobuf-net/protobuf-net.csproj"/>
-        <PackageReference Include="System.IO.Hashing" Version="9.0.1" />
-
+    <PackageReference Include="System.IO.Hashing" Version="9.0.1" />
+    <PackageReference Include="protobuf-net" Version="3.2.46" />
     <NativeFileReference Include="NativeCrypto.c" />
   </ItemGroup>
 
